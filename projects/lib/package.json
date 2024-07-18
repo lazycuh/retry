@@ -1,7 +1,7 @@
 {
   "name": "@lazycuh/retry",
   "description": "Convenient utilities to retry executing some operation until success or failure at most 3 times",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": {
     "name": "Lazy Cuh"
   },
