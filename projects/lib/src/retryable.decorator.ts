@@ -18,6 +18,7 @@ export function Retryable<T>(waitTimeMs = 3000) {
     descriptor.value = function interceptor(...args: unknown[]) {
       return retry(() => original.apply(this, args), waitTimeMs);
     };
+
     return descriptor;
   };
 }

@@ -1,4 +1,4 @@
-# retry [![](https://circleci.com/gh/babybeet/retry.svg?style=svg&logo=appveyor)](https://app.circleci.com/pipelines/github/babybeet/retry?branch=main)
+# retry [![](https://circleci.com/gh/lazycuh/retry.svg?style=svg&logo=appveyor)](https://app.circleci.com/pipelines/github/lazycuh/retry?branch=main)
 
 Convenient utilities to retry executing some operation until success or failure at most 3 times.
 
@@ -18,19 +18,19 @@ Convenient utilities to retry executing some operation until success or failure 
 - `npm`
 
   ```
-  npm i -S @babybeet/retry
+  npm i -S @lazycuh/retry
   ```
 
 - `pnpm`
 
   ```
-  pnpm i -S @babybeet/retry
+  pnpm i -S @lazycuh/retry
   ```
 
 - `yarn`
 
   ```
-  yarn add @babybeet/retry
+  yarn add @lazycuh/retry
   ```
 
 ## Available APIs
@@ -40,7 +40,7 @@ Convenient utilities to retry executing some operation until success or failure 
 To imperatively retry some operation, wrap your function/method call inside `retry` as followed:
 
 ```ts
-import { retry } from '@babybeet/retry';
+import { retry } from '@lazycuh/retry';
 
 ...
 
@@ -64,7 +64,7 @@ Alternatively, you can decorate your methods using `@Retryable` decorator to add
 ```
 
 ```ts
-import { Retryable } from '@babybeet/retry';
+import { Retryable } from '@lazycuh/retry';
 
 ...
 

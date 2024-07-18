@@ -18,6 +18,7 @@ export async function retry<T>(fn: () => Promise<T> | T, waitTimeMs = 3000): Pro
       let isRetrying = false;
       let retryCount = 0;
 
+      // eslint-disable-next-line @typescript-eslint/no-misused-promises
       const repeater = setInterval(async () => {
         // If the async work hasn't completed yet, we want to wait for it
         if (isRetrying) {
@@ -32,7 +33,7 @@ export async function retry<T>(fn: () => Promise<T> | T, waitTimeMs = 3000): Pro
         } catch (error) {
           if (retryCount >= maxRetries) {
             clearInterval(repeater);
-            reject(error);
+            reject(error instanceof Error ? error : new Error(String(error)));
           }
         } finally {
           isRetrying = false;

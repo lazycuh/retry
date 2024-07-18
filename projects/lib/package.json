@@ -1,9 +1,9 @@
 {
-  "name": "@babybeet/retry",
+  "name": "@lazycuh/retry",
   "description": "Convenient utilities to retry executing some operation until success or failure at most 3 times",
   "version": "1.0.0",
   "author": {
-    "name": "Baby Beet"
+    "name": "Lazy Cuh"
   },
   "keywords": [
     "retry"
@@ -19,6 +19,6 @@
   "peerDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/babybeet/retry"
+    "url": "git+https://github.com/lazycuh/retry"
   }
 }
